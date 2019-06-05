@@ -48,9 +48,11 @@ curl 'https://reqres.in/api/notifyUser/1'
 
 Steps to run the project:
 
-1: Make sure you have nodejs and mysql installed on your system.
+1. Make sure you have nodejs and mysql installed on your system.
+
 2. Make sure you run the seed.sql file in MYSQL
-3: Create .env file in the backend folder and put 
+
+3. Create .env file in the backend folder and put 
     MYSQL_HOST = localhost
     MYSQL_PORT = 3306
     MYSQL_USERNAME = root
@@ -59,7 +61,11 @@ Steps to run the project:
     EMAIL_USERNAME = your gmail username
     EMAIL_PASSWORD = your gmail password
     OPEN_WEATHER_API_KEY = c60b8dc6a148e0abb6c10115a9d8c10f
-4: Go to root folder of project.
-5: Type npm install
-5  Type npm start to start the server.
-5: Open http://localhost:3000
+
+4. Go to root folder of project.
+
+5. Type npm install
+
+6.  Type npm start to start the server.
+
+7. Open http://localhost:3000
