@@ -53,14 +53,14 @@ Steps to run the project:
 2. Make sure you run the seed.sql file in MYSQL
 
 3. Create .env file in the backend folder and put 
-    MYSQL_HOST = localhost
-    MYSQL_PORT = 3306
-    MYSQL_USERNAME = root
-    MYSQL_PASSWORD = password
-    MYSQL_DATABASE = join
-    EMAIL_USERNAME = your gmail username
-    EMAIL_PASSWORD = your gmail password
-    OPEN_WEATHER_API_KEY = c60b8dc6a148e0abb6c10115a9d8c10f
+    1. MYSQL_HOST = localhost
+    2. MYSQL_PORT = 3306
+    3. MYSQL_USERNAME = root
+    4. MYSQL_PASSWORD = password
+    5. MYSQL_DATABASE = join
+    6. EMAIL_USERNAME = your gmail username
+    7. EMAIL_PASSWORD = your gmail password
+    8. OPEN_WEATHER_API_KEY = c60b8dc6a148e0abb6c10115a9d8c10f
 
 4. Go to root folder of project.
 
