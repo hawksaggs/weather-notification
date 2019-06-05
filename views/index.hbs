@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Subscribe Temperature</h2>
+        <form id="temperatureSubscribe">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="city">city:</label>
+                <input type="text" class="form-control" id="pwd" placeholder="Enter City" name="city" required="true">
+            </div>
+            <div class="form-group">
+                <label for="city">Temperature Range:</label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter From" name="fromTemp"
+                            required="true">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter To" name="toTemp"
+                            required="true">
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="submitBtn" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#submitBtn').click(function () {
+            console.log($('#temperatureSubscribe').serialize());
+            $.ajax({
+                url: 'http://localhost:3000/subscribe',
+                type: 'POST',
+                data: $('form#temperatureSubscribe').serialize(),
+                success: function (data) {
+                    alert('You subscribed successfully');
+                }
+            });
+        });
+    });
+</script>
+
+</html>
